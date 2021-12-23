@@ -5,7 +5,6 @@ excerpt: >-
   commodo odio aenean sed adipiscing diam donec. Vitae congue mauris rhoncus
   aenean vel elit.
 date: '2021-01-15'
-author: data/team/hilary-ouse.json
 categories:
   - data/categories/news.json
   - data/categories/general.json

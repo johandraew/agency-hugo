@@ -4,7 +4,6 @@ excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ac ut consequat semper viverra.
 date: '2021-01-05'
-author: data/team/dianne-ameter.json
 categories:
   - data/categories/tutorials.json
   - data/categories/news.json
