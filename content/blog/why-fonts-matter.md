@@ -5,6 +5,12 @@ excerpt: >-
   massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing
   placerat lorem.
 date: '2020-12-27'
+author: data/team/gustav-purpleson.json
+categories:
+  - data/categories/general.json
+tags:
+  - data/tags/stackbit.json
+  - data/tags/jamstack.json
 thumb_image: images/post-3-thumb.jpg
 thumb_image_alt: Black white calendar
 image: images/post-3.jpg

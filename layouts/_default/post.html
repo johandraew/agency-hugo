@@ -9,6 +9,19 @@
         {{ $.Params.subtitle }}
       </div>
       {{ end }}
+      {{ if .Params.categories }}
+      {{ $include_dict := dict "categories" $.Params.categories "container_class" "post__cat" }}
+      {{ partial "blog_post_categories.html" $include_dict }}
+      <span class="post__meta-sep"> &middot; </span>
+    {{ end }}
+    {{ if .Params.tags }}
+			{{ $include_dict := dict "tags" $.Params.tags }}
+			{{ partial "blog_post_tags.html" $include_dict }}
+		{{ end }}
+    {{ if .Params.author }}
+    {{ $include_dict := dict "author" $.Params.author "container_class" "post__byline" "avatar_size" "medium" }}
+    {{ partial "blog_post_author.html" $include_dict }}
+  {{ end }}
     </div>
   </header>
   {{ if .Params.image }}

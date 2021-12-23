@@ -5,6 +5,13 @@ excerpt: >-
   commodo odio aenean sed adipiscing diam donec. Vitae congue mauris rhoncus
   aenean vel elit.
 date: '2021-01-15'
+author: data/team/hilary-ouse.json
+categories:
+  - data/categories/news.json
+  - data/categories/general.json
+tags:
+  - data/tags/jamstack.json
+  - data/tags/netlify.json
 thumb_image: images/post-5-thumb.jpg
 thumb_image_alt: White wooden table with a chair
 image: images/post-5.jpg

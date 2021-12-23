@@ -102,6 +102,71 @@ models:
           type: model
           models:
             - action
+  person:
+    type: data
+    label: Person
+    folder: team
+    fields:
+      - type: string
+        name: id
+        label: ID
+        description: 'A unique identifier used when filtering posts, e.g. "john-doe"'
+        required: true
+      - type: string
+        name: link
+        label: Link
+        description: 'The link to the author page, e.g. "blog/author/john-doe"'
+      - type: string
+        name: first_name
+        label: First name
+        required: true
+      - type: string
+        name: last_name
+        label: Last name
+      - type: image
+        name: photo
+        label: Image
+      - type: string
+        name: photo_alt
+        label: Image alt text
+  category:
+    type: data
+    label: Category
+    folder: categories
+    fields:
+      - type: string
+        name: id
+        label: ID
+        description: 'A unique identifier used when filtering posts, e.g. "news"'
+        required: true
+      - type: string
+        name: link
+        label: Link
+        description: 'The link to the category page, e.g. "blog/category/news"'
+      - type: string
+        name: title
+        label: Title
+        required: true
+        description: The title of the category
+  tag:
+    type: data
+    label: Tag
+    folder: tags
+    fields:
+      - type: string
+        name: id
+        label: ID
+        description: 'A unique identifier used when filtering posts, e.g. "jamstack"'
+        required: true
+      - type: string
+        name: link
+        label: Link
+        description: 'The link to the tag page, e.g. "blog/tag/jamstack"'
+      - type: string
+        name: title
+        label: Title
+        required: true
+        description: The title of the tag
   footer:
     type: object
     label: Footer Configuration
@@ -304,6 +369,11 @@ models:
     label: Post
     layout: post
     folder: blog
+    exclude:
+      - _index.md
+      - category/**
+      - author/**
+      - tag/**
     fields:
       - type: string
         name: title

@@ -4,6 +4,10 @@ excerpt: >-
   Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan
   sapien blandit ac amet faucibus aliquet placerat commodo.
 date: '2021-02-12'
+author: data/team/dianne-ameter.json
+categories:
+  - data/categories/tutorials.json
+  - data/categories/general.json
 thumb_image: images/post-6-thumb.jpg
 thumb_image_alt: White desk lamp beside green plant
 image: images/post-6.jpg

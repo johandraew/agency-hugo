@@ -4,6 +4,13 @@ excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ac ut consequat semper viverra.
 date: '2021-01-05'
+author: data/team/dianne-ameter.json
+categories:
+  - data/categories/tutorials.json
+  - data/categories/news.json
+tags:
+  - data/tags/jamstack.json
+  - data/tags/sourcebit.json
 thumb_image: images/post-4-thumb.jpg
 thumb_image_alt: White concrete building
 image: images/post-4.jpg
