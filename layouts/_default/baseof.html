@@ -41,6 +41,17 @@
     <body class="font-{{ .Site.Data.config.base_font }} palette-{{ .Site.Data.config.color_scheme }} accent-{{ .Site.Data.config.accent_color }}">
         
         <div id="site-wrap" class="site">
+        	{{ if and .Site.Data.config.header.has_anncmnt .Site.Data.config.header.anncmnt_content }}
+        		{{ if $.Site.Data.config.header.anncmnt_is_home_only }}
+        			{{ if eq $.URL "/" }}
+        				{{ $include_dict := dict "Site" $.Site }}
+        				{{ partial "announcement.html" $include_dict }}
+        			{{ end }}
+        		{{ else }}
+        			{{ $include_dict := dict "Site" $.Site }}
+        			{{ partial "announcement.html" $include_dict }}
+        		{{ end }}
+        	{{ end }}
           {{ partial "header.html" . }}
           <main id="content" class="site-content">
             {{ block "content" . }}{{ end }}

@@ -37,6 +37,11 @@ $container-padding: 3vw !default;
 // Grid gap
 $grid-gap: 1.66667rem !default;
 
+// Announcement
+$color-anncmnt-bg:                     #eceef1 !default;
+$color-bold-anncmnt-bg:                #2c343c !default;
+$color-bold-anncmnt-text:              #fff !default;
+
 @import "imports/reset";
 @import "imports/general";
 @import "imports/helpers";
@@ -57,3 +62,4 @@ $grid-gap: 1.66667rem !default;
 @import "imports/footer";
 @import "imports/variations";
 @import "imports/banner";
+@import "imports/announcement";
